@@ -11,7 +11,7 @@
     <title>Inicio - Validación de Siniestros</title>
 </head>
 <body>
-    <h1>Bienvenido al Sistema de Seguros</h1>
+    <h1>¡Bienvenido!</h1>
     <p>Usuario activo: ${usuarioLogueado}</p>
     <a href="login.jsp">Cerrar Sesión</a>
 </body>
