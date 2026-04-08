@@ -31,3 +31,5 @@ public class LoginTest {
         assertFalse("El login debería rechazar el acceso con datos incorrectos", resultado);
     }
 }
+
+// Verificación de integración
