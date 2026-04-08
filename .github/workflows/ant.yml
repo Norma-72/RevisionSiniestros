@@ -5,9 +5,9 @@ name: Java CI with Ant
 
 on:
   push:
-    branches: [ "master", "develop" ]
+    branches: [ "main", "develop" ] # Cambiado a main
   pull_request:
-    branches: [ "master", "develop" ]
+    branches: [ "main", "develop" ]
 
 jobs:
   build:
@@ -25,4 +25,6 @@ jobs:
         cache: ant
 
     - name: Build with Ant
-      run: ant -f build.xml dist
+      run: |
+        cd "Documents/NetBeansProjects/ValidacionSiniestros"
+        ant -f build.xml dist
