@@ -23,7 +23,8 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Build with Ant
+    - name: Build and Run JUnit Tests
       run: |
         cd "Documents/NetBeansProjects/ValidacionSiniestros"
-        ant -f build.xml -Dj2ee.server.home=. -Dignore.failing.tests=true compile
+        ant -f build.xml -Dj2ee.server.home=. compile
+        ant -f build.xml -Dj2ee.server.home=. test
